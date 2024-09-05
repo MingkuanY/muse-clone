@@ -1,0 +1,35 @@
+@use "./mixin" as mixin;
+
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .generationContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0.2rem solid mixin.$dark;
+    height: 40rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border-style: dashed;
+
+    .micBtn {
+      background-color: mixin.$dark;
+      width: 10rem;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      padding: 1rem;
+    }
+
+    .text {
+      margin-top: 1rem;
+      font-size: 2rem;
+      width: 28rem;
+      text-align: center;
+    }
+  }
+}

@@ -7,6 +7,7 @@
   align-items: center;
 
   .generationContainer {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,6 +24,11 @@
       aspect-ratio: 1;
       border-radius: 50%;
       padding: 1rem;
+      transition: 0.5s;
+
+      &:active {
+        background-color: mixin.$gray;
+      }
     }
 
     .text {
@@ -30,6 +36,32 @@
       font-size: 2rem;
       width: 28rem;
       text-align: center;
+      color: mixin.$dark;
+    }
+
+    .genFullStoryBtn {
+      position: absolute;
+      bottom: -1rem;
+      left: 50%;
+      transform: translate(-50%);
+      font-size: 2rem;
+      background-color: mixin.$gray;
+      border-radius: 0.75rem;
+      color: mixin.$dark;
+      padding: 1.2rem;
+      transition: 0.5s;
+
+      &:active {
+        background-color: mixin.$white;
+      }
     }
   }
+}
+
+.storyPage {
+  padding: 0 30rem;
+  font-size: 2rem;
+  line-height: 3rem;
+  margin-bottom: 10rem;
+  white-space: pre-wrap;
 }

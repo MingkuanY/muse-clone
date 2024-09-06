@@ -10,7 +10,7 @@ export async function POST(request: Request) {
 
   let prompt = "";
   if (type === "summary") {
-    prompt = `Summarize this idea in a simple sentence that starts with "Write a story about ${input}." Do not add too many new details beyond what is provided.`;
+    prompt = `Summarize the following idea in a simple sentence at an elementary reading level: ${input}. The sentence must start with "Write a story about ". Do not include quotation marks and do not add too many new details beyond what is provided. After the sentence summary, suggest exactly 3 emojis that represent the idea separated by commas.`;
   } else if (type === "story") {
     prompt = `Write a short story in 5 to 8 sentences at an elementary school reading level based on this summary: ${input}`;
   }
@@ -20,7 +20,7 @@ export async function POST(request: Request) {
     messages: [
       {
         role: "system",
-        content: "You are an assistant that helps generate stories.",
+        content: "You are an assistant that helps generate stories",
       },
       { role: "user", content: prompt },
     ],

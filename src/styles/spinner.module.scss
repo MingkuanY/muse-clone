@@ -1,0 +1,17 @@
+@use "./mixin" as mixin;
+
+.spinner {
+  margin-top: 2rem;
+  height: 4rem;
+  aspect-ratio: 1;
+  border: 0.3rem solid;
+  border-color: mixin.$white mixin.$light-gray mixin.$white mixin.$light-gray;
+  border-radius: 50%;
+  animation: spin 1.3s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

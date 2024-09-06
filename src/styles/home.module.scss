@@ -17,6 +17,11 @@
     aspect-ratio: 1;
     border-radius: 50%;
     border-style: dashed;
+    transition: 0.5s;
+
+    &.bigger {
+      height: 60rem;
+    }
 
     .micBtn {
       background-color: mixin.$dark;
@@ -37,6 +42,27 @@
       width: 28rem;
       text-align: center;
       color: mixin.$dark;
+    }
+
+    .emojis {
+      position: absolute;
+      top: 7rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+
+      .emoji {
+        margin: 0 5rem;
+        font-size: 3rem;
+        background-color: mixin.$dark-gray;
+        height: 5rem;
+        aspect-ratio: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+      }
     }
 
     .genFullStoryBtn {

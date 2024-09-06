@@ -1,3 +1,13 @@
+### Muse Take Home Challenge
+
+Hi! In this timed project, I built a clone of a basic prototype of Muse where the user can verbally tell the app about a story they want to write. The app will then generate a summary with 3 accompanying emojis. The user can finally click a button to generate the full story.
+
+Built using Next.js, TypeScript, Web Speech API, and GPT-4
+
+Check out my demo: https://youtu.be/duwBsR5Eo9Q
+
+### How to Run
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
